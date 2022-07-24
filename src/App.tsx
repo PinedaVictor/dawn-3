@@ -1,14 +1,13 @@
-import React from 'react';
-import './App.css';
-import Web3 from 'web3';
-import { BlockHeader, Block } from 'web3-eth' // ex. package types
-
-const web3 = new Web3();
+import React from "react";
+import "./App.css";
+import Web3 from "web3";
 
 export const App: React.FC = () => {
-  console.log("The web3 obj", web3)
-  
+  const web3 = window.ethereum
+    ? new Web3(Web3.givenProvider || "ws://localhost:8545")
+    : undefined;
 
+  console.log(web3);
   return (
     <div className="App">
       <header className="App-header">
@@ -19,5 +18,4 @@ export const App: React.FC = () => {
       </main>
     </div>
   );
-}
-
+};
