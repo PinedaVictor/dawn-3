@@ -10,7 +10,7 @@ Config override for create-react-app web3
 - `polyfill.js` - Adds buffer polyfill for outdated browser
 - `package.json` - Scripts are now running `react-app-rewired `
 
-# Getting Started with Create React App
+## Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
