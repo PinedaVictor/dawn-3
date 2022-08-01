@@ -1,3 +1,15 @@
+# Dawn 3
+
+Config override for create-react-app web3
+
+## key Takeaways
+
+- [react-app-rewired](https://github.com/timarney/react-app-rewired) - Used to override CRA config without ejecting
+  - refer to docs for installation
+- `config-overrides.js` - Resovles modules needed for web3
+- `polyfill.js` - Adds buffer polyfill for outdated browser
+- `package.json` - Scripts are now running `react-app-rewired `
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
